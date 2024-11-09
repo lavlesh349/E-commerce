@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Product = require('./models/Product');  // schema require krna padega...
-
-
 const products = [
     {
         name:"Iphone 14pro",
@@ -34,7 +32,6 @@ const products = [
         desc: "badiya hai kamao kamao"
     }
 ]
-
 async function seedDB(){
     try {
         await Product.insertMany(products);
